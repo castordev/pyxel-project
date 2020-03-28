@@ -14,7 +14,7 @@ class App(object):
 
 	def draw(self):
 		pyxel.cls(0)
-		pyxel.pix(self.pix_x, self.pix_y, 11)
+		pyxel.pset(self.pix_x, self.pix_y, 11)
 		print('Im drawing')
 
 App(160,160,"Moving pixel", 5)

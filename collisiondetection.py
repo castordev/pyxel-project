@@ -86,7 +86,7 @@ class App(object):
 		pyxel.rect(x,y,x+10,y+10,color)
 
 	def draw_pix(self,pixel):
-		pyxel.pix(pixel.x, pixel.y, pixel.color)
+		pyxel.pset(pixel.x, pixel.y, pixel.color)
 	
 	def draw_star(self, star):
 		pyxel.line(star.x - 2, star.y, star.x + 2, star.y, star.color)

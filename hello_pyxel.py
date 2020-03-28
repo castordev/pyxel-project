@@ -8,6 +8,6 @@ def update():
 def draw():
 	print("WHat to draw on the screen!")
 	pyxel.cls(0)
-	pyxel.pix(80,80,11)
+	pyxel.pset(80,80,11)
 
 pyxel.run(update,draw)

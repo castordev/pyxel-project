@@ -9,7 +9,7 @@ class App(object):
 		pyxel.run(self.update, self.draw)
 
 	def draw_pixel(self, x, y, color):
-		pyxel.pix(x,y,color)
+		pyxel.pset(x,y,color)
 
 	def draw_line(self, x,y, color):
 		pyxel.line(x,y,x+10,y,color)
@@ -27,8 +27,8 @@ class App(object):
 		pass
 
 	def draw(self):
-		FG = random.choice([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16])
-		BG = 16 % FG
+		FG = random.choice([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15])
+		BG = 16 % (FG +1)
 		pyxel.cls(BG)
 		self.draw_pixel(30,10,FG)
 		self.draw_line(30,30,FG)
